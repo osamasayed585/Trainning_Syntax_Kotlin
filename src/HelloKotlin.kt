@@ -8,10 +8,12 @@ fun main() {
 //    println("first Array: "+arrString.first())
 //    println("Size Array: "+arrString.size)
 
-    var colors = ArrayList<String>()
+    val colors = ArrayList<String>()
     colors.add("wight")
     colors.add("red")
     colors.add("back")
+    colors.add("Green")
+
 
     println("arr: ${colors[2]}")
 }
