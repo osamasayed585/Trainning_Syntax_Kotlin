@@ -18,6 +18,6 @@ fun main() {
 
     // this is a forLoop in kotlin
     for (n in 1..5){
-        println("$n: Hello")
+        println("$n: Hello Kotlin")
     }
 }
