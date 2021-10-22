@@ -13,7 +13,6 @@ fun main() {
     colors.add("red")
     colors.add("back")
     colors.add("Green")
-    colors.add("Green2")
 
 
     println("arr: ${colors[2]}")
