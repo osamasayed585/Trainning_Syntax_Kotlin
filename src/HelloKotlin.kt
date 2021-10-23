@@ -9,15 +9,21 @@ fun main() {
 
 //  this is a arrayList
 
-//    val colors = ArrayList<String>()
-//    colors.add("wight")
-//    colors.add("red")
-//    colors.add("back")
-//    colors.add("Green")
-//    println("arr: ${colors[2]}")
+    val colors = ArrayList<String>()
+    colors.add("wight")
+    colors.add("red")
+    colors.add("back")
+    colors.add("Green")
+
 
     // this is a forLoop in kotlin
-    for (n in 1..5){
-        println("$n: Hello Kotlin!!!")
+    for (n in 0 until colors.size ){
+        // you must add keyword until after num 0
+        println(colors[n])
+    }
+    // this a new way in for loop
+    println("----------------")
+    for (color in colors){
+        println(color)
     }
 }
