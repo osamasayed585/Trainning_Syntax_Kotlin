@@ -5,9 +5,15 @@ fun main() {   //    index    0      1        2        3      4         5     6
     val infoList = listOf("Hello", "OSama", "Sayed", "and", "Welcome", "to", "Kotiln")
     // for loop with list in kotlin
 
-    infoList.forEach {        // name ->
-        println(it)           // println(name)
+    outerLoop@for (step in 1..5){
+        innerLoop@for (innerStep in 1..10){
+            if (step == 2) break@outerLoop
+            print("${innerStep * step}  ")
+        }
+        println()
     }
+
+//    infoList.forEach { println(it) }
 
 //  for (item in infoList){ println(item)}
 
