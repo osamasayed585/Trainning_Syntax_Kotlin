@@ -1,11 +1,15 @@
 package list
 
 fun main() {   //    index    0      1        2        3      4         5     6
-    val infoList = listOf("Hello", "OSama", "Sayed", "and", "Welcome", "to", "Kotiln")
 
+    val infoList = listOf("Hello", "OSama", "Sayed", "and", "Welcome", "to", "Kotiln")
     // for loop with list in kotlin
 
-for (item in infoList){ println(item)}
+    infoList.forEach {        // name ->
+        println(it)           // println(name)
+    }
+
+//  for (item in infoList){ println(item)}
 
 //    for (item in 0 until infoList.size ){ println(infoList[item])}
 
