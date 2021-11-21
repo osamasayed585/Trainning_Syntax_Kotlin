@@ -15,11 +15,21 @@ val thirdInfoName: (Int, Int) -> Int = { num , num2 ->
    num + num2
 }
 
+val fourInfoName: (String) -> Unit = {
+    if (it == "Osama") {
+        println("Yes")
+    }
+}
+val another: () -> Unit = {
+    println("another")
+}
+
 
 fun main() {
     println(name)
     println(infoName())
     println(SecondInfoName("Android ", "DEV"))
     println(thirdInfoName(2, 5))
-
+    fourInfoName("Osama")
+    another()
 }
