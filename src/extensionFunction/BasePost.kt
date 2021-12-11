@@ -1,6 +1,6 @@
 package extensionFunction
 
-abstract class BasePost(var name: String, content: String) {
+abstract class BasePost(var name: String, var content: String) {
 
     val comments = mutableListOf<String>()
 
@@ -25,5 +25,9 @@ abstract class BasePost(var name: String, content: String) {
     }
 
     abstract fun editPost()
+
+    fun getContent(){
+        println(content)
+    }
 
 }
