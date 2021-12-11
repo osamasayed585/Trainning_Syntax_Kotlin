@@ -1,5 +1,8 @@
 package Inheritance
 
-class Gallery: Car() {
-    val justCar = getModel("BMW")
+class Gallery(var welcome: String, model: String): Car(model) {
+
+    fun sayHelloCar(){
+        println("$welcome")
+    }
 }

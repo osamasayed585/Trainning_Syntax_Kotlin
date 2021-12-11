@@ -1,10 +1,11 @@
 package Inheritance
 
-open class Car {
-    var model: String? = null
+open class Car(var model: String) {
 
+    var getCarCount = 0
+    private set
 
-    fun getModel(name: String){
-        println("This is a $name")
+    fun getModel(){
+        println("$model")
     }
 }
