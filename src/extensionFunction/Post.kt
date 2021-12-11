@@ -1,23 +1,10 @@
 package extensionFunction
 
-open class Post(var name: String, var content: String) {
+class Post(name: String, content: String): BasePost(name, content) {
 
-    val comments = mutableListOf<String>()
-
-    var likeCount = 0
-        private set
-
-    var commentsCount = 0
-        private set
-        get() = comments.size
-
-    fun like(){
-        this.likeCount++
-        println("have a new like.")
+    override fun editPost() {
+        // to do anyThing here
     }
 
-    fun addComment(comment: String){
-        comments.add(comment)
-    }
 
 }
