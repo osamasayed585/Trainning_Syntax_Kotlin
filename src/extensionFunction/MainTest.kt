@@ -7,6 +7,9 @@ fun main() {
 
     val test = ImagePost("Hello","World")
     test.getLink()
+
+    test.uploadImage()
+
 }
 
 fun String.printThree(){

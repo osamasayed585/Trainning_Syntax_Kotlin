@@ -20,4 +20,8 @@ open class Post(var name: String, var content: String) {
         comments.add(comment)
     }
 
+    open fun uploadImage(){
+        println("Hello dear.!")
+    }
+
 }
